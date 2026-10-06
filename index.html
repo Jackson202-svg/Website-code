@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly guide to building your first website in Visual Studio Code.">
+  <title>Build Your First Website in VS Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">CodeStart</a>
+    <nav>
+      <a href="#steps">Steps</a>
+      <a href="#files">Files</a>
+      <a href="#next">Next</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">BEGINNER GUIDE • VS CODE</div>
+      <h1>Build your first website in <span>VS Code.</span></h1>
+      <p>Learn the simple HTML + CSS + JavaScript workflow, one step at a time.</p>
+      <a class="button" href="#steps">Start learning →</a>
+    </section>
+
+    <section id="steps" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">THE WORKFLOW</p>
+        <h2>From empty folder to live webpage</h2>
+      </div>
+
+      <div class="steps">
+        <article class="card">
+          <div class="number">01</div>
+          <h3>Install VS Code</h3>
+          <p>Download Visual Studio Code and open it on your computer.</p>
+          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Get VS Code ↗</a>
+        </article>
+        <article class="card">
+          <div class="number">02</div>
+          <h3>Create a project folder</h3>
+          <p>Make a folder such as <code>my-first-website</code>, then open that folder in VS Code.</p>
+        </article>
+        <article class="card">
+          <div class="number">03</div>
+          <h3>Create your files</h3>
+          <p>Add <code>index.html</code>, <code>style.css</code>, and <code>script.js</code>.</p>
+        </article>
+        <article class="card">
+          <div class="number">04</div>
+          <h3>Write the HTML</h3>
+          <p>HTML creates the structure: headings, paragraphs, buttons, images, and sections.</p>
+        </article>
+        <article class="card">
+          <div class="number">05</div>
+          <h3>Style with CSS</h3>
+          <p>CSS controls colors, spacing, fonts, layouts, responsive design, and animations.</p>
+        </article>
+        <article class="card">
+          <div class="number">06</div>
+          <h3>Add JavaScript</h3>
+          <p>JavaScript makes the page interactive, such as buttons, menus, forms, and dynamic content.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="files" class="section dark">
+      <div class="section-heading">
+        <p class="eyebrow">STARTER CODE</p>
+        <h2>Your first three files</h2>
+      </div>
+
+      <div class="code-grid">
+        <div class="code-card">
+          <div class="code-title"><span>index.html</span><button data-copy="html-code">Copy</button></div>
+          <pre id="html-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My Website&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;p&gt;I built this website in VS Code.&lt;/p&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <div class="code-card">
+          <div class="code-title"><span>style.css</span><button data-copy="css-code">Copy</button></div>
+          <pre id="css-code"><code>body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.1rem;
+}</code></pre>
+        </div>
+
+        <div class="code-card">
+          <div class="code-title"><span>script.js</span><button data-copy="js-code">Copy</button></div>
+          <pre id="js-code"><code>const heading = document.querySelector("h1");
+
+heading.addEventListener("click", () => {
+  heading.textContent = "You clicked it!";
+});</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section checklist">
+      <div class="section-heading">
+        <p class="eyebrow">CHECKLIST</p>
+        <h2>Before you publish</h2>
+      </div>
+      <label><input type="checkbox"> My HTML file is named <code>index.html</code>.</label>
+      <label><input type="checkbox"> My CSS file is connected with <code>&lt;link&gt;</code>.</label>
+      <label><input type="checkbox"> My JavaScript file is connected with <code>&lt;script&gt;</code>.</label>
+      <label><input type="checkbox"> I tested the website in a browser.</label>
+      <label><input type="checkbox"> I checked the page on a phone-sized screen.</label>
+    </section>
+
+    <section id="next" class="cta">
+      <p class="eyebrow">NEXT LEVEL</p>
+      <h2>Ready to build something bigger?</h2>
+      <p>After the basics, learn Git, GitHub, responsive layouts, accessibility, forms, APIs, and modern frameworks.</p>
+      <a class="button" href="#steps">Review the steps ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>CodeStart • A simple guide for learning web development in VS Code.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
